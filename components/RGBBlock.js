@@ -5,10 +5,10 @@ export default class RGBBlock extends PureComponent {
   state = {
     r: new Animated.Value(0),
     g: new Animated.Value(0),
-    b: new Animated.Value(0)
+    b: new Animated.Value(0),
   };
-  componentWillReceiveProps = props => {
-    let { rgb } = props;
+  componentWillReceiveProps = nextProps => {
+    let { rgb } = nextProps;
     let { r, g, b } = this.state;
     let animations = [r, g, b].map((originValue, index) =>
       Animated.timing(originValue, {
@@ -20,6 +20,7 @@ export default class RGBBlock extends PureComponent {
   };
   render() {
     let { r, g, b } = this.state;
+    let {displayColor} = this.props
     return (
       <View>
         {[r, g, b].map((width, index) => (
@@ -27,7 +28,11 @@ export default class RGBBlock extends PureComponent {
             key={index}
             style={{
               ...styles.RGBBlock,
-              width
+              width:width.interpolate({
+                inputRange: [0, 255],
+                outputRange: ['0%', '100%']
+              }),
+              backgroundColor: displayColor
             }}
           />
         ))}

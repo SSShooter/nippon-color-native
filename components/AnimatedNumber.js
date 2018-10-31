@@ -1,28 +1,18 @@
 import React, { Component, PureComponent } from "react";
-import {
-  Animated,
-  StyleSheet,
-  Text,
-  Alert,
-  View,
-  ScrollView
-} from "react-native";
+import { Animated, Text } from "react-native";
 export default class AnimatedNumber extends PureComponent {
-  constructor(props) {
-    super();
-    this.state = {
-      value: 0
-    };
-  }
-  componentWillReceiveProps(props) {
+  state = {
+    value: 0
+  };
+  componentWillReceiveProps(nextProps) {
     clearInterval(this.timer);
-    this.animate();
+    this.animate(nextProps);
   }
   componentDidMount() {
     this.animate();
   }
-  animate = () => {
-    let { duration, value, easing, initValue } = this.props;
+  animate = nextProps => {
+    let { duration, value, easing, initValue } = nextProps || this.props;
     let step = ~~(duration / 16.7);
     let from = this.state.value;
     let to = value;
@@ -39,6 +29,10 @@ export default class AnimatedNumber extends PureComponent {
     }, 16.7);
   };
   render() {
-    return <Text>{this.state.value}</Text>;
+    return (
+      <Animated.Text style={{ color: this.props.displayColor }}>
+        {this.state.value}
+      </Animated.Text>
+    );
   }
 }

@@ -1,49 +1,40 @@
 import React, { Component, PureComponent } from "react";
 import {
   Animated,
+  Alert,
   StyleSheet,
   Text,
   View,
   TouchableOpacity,
+  ScrollView,
+  LayoutAnimation,
+  UIManager
 } from "react-native";
 import { DURATION, FONTSIZE } from "../constant.js";
 
+UIManager.setLayoutAnimationEnabledExperimental &&
+  UIManager.setLayoutAnimationEnabledExperimental(true);
+
 export default class ColorTab extends PureComponent {
   state = {
-    opacity: new Animated.Value(0),
-    translateX: new Animated.Value(-20)
+    opacity: 0,
+    translateX: 20
   };
-  componentDidMount() {
-    // this.startAnimate();
-  }
   startAnimate() {
-    this.state.translateX.stopAnimation(fin => {
-      Animated.timing(this.state.translateX, {
-        toValue: 0,
-        duration: 450
-      }).start();
-      Animated.timing(this.state.opacity, {
-        toValue: 1,
-        duration: 450
-      }).start();
+    this.setState({
+      opacity: 1,
+      translateX: 0
     });
   }
-  resetState() {
-    // TODO figure out Not working reason
-    // this.setState({
-    //   opacity: new Animated.Value(0),
-    //   translateX: new Animated.Value(-20)
-    // });
-    this.state.translateX.stopAnimation(fin => {
-      Animated.timing(this.state.translateX, {
-        toValue: -20,
-        duration: 500
-      }).start();
-      Animated.timing(this.state.opacity, {
-        toValue: 0,
-        duration: 500
-      }).start();
+  resetState(color) {
+    this.setState({
+      opacity: 0,
+      translateX: 20
     });
+  }
+
+  componentWillUpdate() {
+    LayoutAnimation.easeInEaseOut(); //每次组件更新前，执行LayoutAnimation动画
   }
   handlePress = color => {
     this.props.changeColor(color);
@@ -52,9 +43,7 @@ export default class ColorTab extends PureComponent {
     let { color } = this.props;
     let { translateX, opacity } = this.state;
     return (
-      <Animated.View
-        style={{ opacity, transform: [{ translateX }] }}
-      >
+      <View style={{ opacity, transform: [{ translateX }] }}>
         <TouchableOpacity
           onPress={() => this.handlePress(color)}
           style={[styles.tab]}
@@ -69,7 +58,7 @@ export default class ColorTab extends PureComponent {
             </Text>
           </View>
         </TouchableOpacity>
-      </Animated.View>
+      </View>
     );
   }
 }
