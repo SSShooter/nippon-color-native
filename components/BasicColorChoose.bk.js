@@ -8,7 +8,7 @@ export default class BasicColorChoose extends PureComponent {
     super(props);
     this.state = {
       isExpanded: false,
-      currentColor: {},
+      currentHex: {},
       list: [
         { hex: "fffffb", color: "w", position: new Animated.Value(0) },
         { hex: "0c0c0c", color: "b", position: new Animated.Value(0) },
@@ -33,7 +33,7 @@ export default class BasicColorChoose extends PureComponent {
       });
     });
   }
-  close(color) {
+  close(hex) {
     let animateList = this.state.list.map(color => {
       return Animated.timing(color.position, {
         toValue: 0
@@ -42,59 +42,46 @@ export default class BasicColorChoose extends PureComponent {
     this.setState(
       {
         isExpanded: false,
-        currentColor: color
+        currentHex: hex
       },
       () => {
         Animated.parallel(animateList).start();
-        this.props.onBasicColorChange(color)
       }
     );
   }
-  toggle = color => {
+  toggle = hex => {
+    console.log("toggle");
     if (this.state.isExpanded) {
-      this.close(color);
+      this.close(hex);
     } else {
       this.open();
     }
   };
   render() {
     let { list } = this.state;
-    let { displayColor, ...otherProps } = this.props;
+    let { height, width, displayColor, ...otherProps } = this.props;
     return (
       <View {...otherProps}>
         {list.map(color => (
           <TouchableOpacity
-            onPress={() => this.toggle(color.color)}
+            onPress={() => this.toggle(color.hex)}
             style={{
-              zIndex: this.state.currentColor === color.color ? 3 : 1
+              zIndex: this.state.currentHex === color.hex ? 3 : 1
             }}
           >
-            {color.color !== "all" ? (
+            {color.hex !== "all" ? (
               <Animated.View
                 style={{
-                  position: "absolute",
-                  backgroundColor: "#000000",
-                  height: 1.2 * FONTSIZE,
-                  width: 1.2 * FONTSIZE,
-                  borderRadius: 50,
-                  borderWidth: 0.1 * FONTSIZE,
-                  transform: [{ translateY: color.position }],
+                  ...styles.colorCircle,
+                  height,
+                  width,
                   backgroundColor: "#" + color.hex,
+                  transform: [{ translateY: color.position }],
                   borderColor: displayColor
                 }}
               />
             ) : (
-              <Animated.View
-                style={{
-                  position: "absolute",
-                  transform: [{ translateY: color.position }],
-                  borderColor: displayColor,
-                  height: 1.2 * FONTSIZE,
-                  width: 1.2 * FONTSIZE,
-                  borderWidth: 0.1 * FONTSIZE,
-                  borderRadius: 50
-                }}
-              >
+              Animated.createAnimatedComponent(
                 <LinearGradient
                   colors={[
                     "#fffffb",
@@ -108,13 +95,14 @@ export default class BasicColorChoose extends PureComponent {
                   start={{ x: 0, y: 0 }}
                   end={{ x: 1, y: 1 }}
                   style={{
-                    // because of the default border-box, should minus the boder width
-                    height: 1 * FONTSIZE,
-                    width: 1 * FONTSIZE,
-                    borderRadius: 50
-                  }}
+                    ...styles.colorCircle,
+                    height,
+                    width,
+                    transform: [{ translateY: color.position }],
+                    borderColor: displayColor
+                  }} 
                 />
-              </Animated.View>
+              )
             )}
           </TouchableOpacity>
         ))}
@@ -122,3 +110,11 @@ export default class BasicColorChoose extends PureComponent {
     );
   }
 }
+
+const styles = StyleSheet.create({
+  colorCircle: {
+    position: "absolute",
+    borderRadius: 50,
+    borderWidth: 0.1 * FONTSIZE
+  }
+});

@@ -13,7 +13,8 @@ import RGBBlock from "./components/RGBBlock.js";
 import RGBNumber from "./components/RGBNumber.js";
 import NameBlock from "./components/NameBlock.js";
 import BasicColorChoose from "./components/BasicColorChoose.js";
-import { DURATION, FONTSIZE } from "./constant.js";
+import MyButton from "./components/MyButton.js";
+import { DURATION, FONTSIZE, BUTTON_GAP } from "./constant.js";
 
 export default class App extends Component {
   constructor() {
@@ -22,14 +23,18 @@ export default class App extends Component {
       baseAnimate: new Animated.Value(0),
       selectedColor: { rgb: "ffffff", name: "日本の伝統色", color: "" },
       lastRGB: "#ffffff",
-      displayWordColor: new Animated.Value(1)
+      displayWordColor: new Animated.Value(1),
+      colorList
     };
     this.colorEleList = {};
     this.handleViewableChange = ({ changed }) => {
+      console.log(changed);
+      if (!changed) return;
       for (let i = 0; i < changed.length; i += 1) {
         if (changed[i].isViewable) {
+          console.log(this.colorEleList[changed[i].item.color]);
           this.colorEleList[changed[i].item.color].startAnimate();
-        } else {
+        } else if (this.colorEleList[changed[i].item.color]) {
           this.colorEleList[changed[i].item.color].resetState(
             changed[i].item.color
           );
@@ -42,7 +47,20 @@ export default class App extends Component {
       waitForInteraction: false
     };
   }
-  handleChange = color => {
+  handleBasicColorChange = color => {
+    console.log(
+      "颜色分类修改",
+      color,
+      colorList.filter(item => item.c === color)
+    );
+    let basicColor =
+      color === "all" ? colorList : colorList.filter(item => item.c === color);
+    this.setState({
+      colorList: basicColor,
+      selectedColor: basicColor[0]
+    });
+  };
+  handleSelectedChange = color => {
     let { selectedColor, baseAnimate, lastRGB } = this.state;
     let newLastRGB = baseAnimate
       .interpolate({
@@ -72,7 +90,13 @@ export default class App extends Component {
     );
   };
   render() {
-    let { selectedColor, baseAnimate, lastRGB, displayWordColor } = this.state;
+    let {
+      selectedColor,
+      baseAnimate,
+      lastRGB,
+      colorList,
+      displayWordColor
+    } = this.state;
     let displayColor = displayWordColor.interpolate({
       inputRange: [0, 1],
       outputRange: ["#ffffff", "#000000"]
@@ -101,21 +125,69 @@ export default class App extends Component {
             />
           ) : null}
           <NameBlock
+            displayColor={displayColor}
+            selectedColor={selectedColor}
             style={{
               position: "absolute",
               bottom: FONTSIZE,
               left: FONTSIZE
             }}
-            selectedColor={selectedColor}
           />
           <BasicColorChoose
+            onBasicColorChange={this.handleBasicColorChange}
             displayColor={displayColor}
             style={{
               position: "absolute",
               bottom: 2 * FONTSIZE,
-              right: 2 * FONTSIZE
+              right: 2 * FONTSIZE,
+              height: 1.2 * FONTSIZE,
+              width: 1.2 * FONTSIZE
             }}
           />
+          <MyButton
+            displayColor={displayColor}
+            style={{
+              position: "absolute",
+              bottom: 2 * FONTSIZE,
+              right: 2 * BUTTON_GAP * FONTSIZE,
+              fontSize: 1.2 * FONTSIZE
+            }}
+          >
+            {"\uE64C" /* e64b */}
+          </MyButton>
+          <MyButton
+            displayColor={displayColor}
+            style={{
+              position: "absolute",
+              bottom: 2 * FONTSIZE,
+              right: 3 * BUTTON_GAP * FONTSIZE,
+              fontSize: 1.2 * FONTSIZE
+            }}
+          >
+            {"\ue936"}
+          </MyButton>
+          <MyButton
+            displayColor={displayColor}
+            style={{
+              position: "absolute",
+              bottom: 2 * FONTSIZE,
+              right: 4 * BUTTON_GAP * FONTSIZE,
+              fontSize: 1.2 * FONTSIZE
+            }}
+          >
+            {"\ue6e5"}
+          </MyButton>
+          <MyButton
+            displayColor={displayColor}
+            style={{
+              position: "absolute",
+              bottom: 2 * FONTSIZE,
+              right: 5 * BUTTON_GAP * FONTSIZE,
+              fontSize: 1.2 * FONTSIZE
+            }}
+          >
+            {"\ue673"}
+          </MyButton>
         </Animated.View>
         <FlatList
           style={styles.tabWrapper}
@@ -129,7 +201,7 @@ export default class App extends Component {
             return (
               <ColorTab
                 ref={ref => (this.colorEleList[color.color] = ref)}
-                changeColor={this.handleChange}
+                changeColor={this.handleSelectedChange}
                 color={color}
                 key={color.color}
               />
