@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -42,6 +41,7 @@
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		C31680BBF1F043CEA2E30C15 /* libRNViewShot.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE0D172836F049ABB2CE85A8 /* libRNViewShot.a */; };
 		FCC1D493CB4E445682B30506 /* XANO-mincho-U32.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37389263E3504CAE901E2319 /* XANO-mincho-U32.ttf */; };
+		CC9F389870C84E868FA0A3B8 /* BPtypewrite.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD0C3D1EC4BE47ADB8CA3EAB /* BPtypewrite.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -374,6 +374,7 @@
 		C8C802D45B604CD6AA851DE9 /* RNViewShot.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNViewShot.xcodeproj; path = "../node_modules/react-native-view-shot/ios/RNViewShot.xcodeproj"; sourceTree = "<group>"; };
 		DB27147A635F487D8EE4ED56 /* BVLinearGradient.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = BVLinearGradient.xcodeproj; path = "../node_modules/react-native-linear-gradient/BVLinearGradient.xcodeproj"; sourceTree = "<group>"; };
 		EBA552E5EF6A4143A460F51A /* libBVLinearGradient.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libBVLinearGradient.a; sourceTree = "<group>"; };
+		FD0C3D1EC4BE47ADB8CA3EAB /* BPtypewrite.ttf */ = {isa = PBXFileReference; name = "BPtypewrite.ttf"; path = "../assets/fonts/BPtypewrite.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -522,6 +523,7 @@
 			children = (
 				37389263E3504CAE901E2319 /* XANO-mincho-U32.ttf */,
 				C293FA6D76BE494BBFC86345 /* iconfont.ttf */,
+				FD0C3D1EC4BE47ADB8CA3EAB /* BPtypewrite.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1152,6 +1154,7 @@
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				FCC1D493CB4E445682B30506 /* XANO-mincho-U32.ttf in Resources */,
 				94FB119A529242E0B4586A80 /* iconfont.ttf in Resources */,
+				CC9F389870C84E868FA0A3B8 /* BPtypewrite.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

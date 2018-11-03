@@ -13,8 +13,8 @@ export default class BasicColorChoose extends PureComponent {
         { hex: "fffffb", color: "w", position: new Animated.Value(0) },
         { hex: "0c0c0c", color: "b", position: new Animated.Value(0) },
         { hex: "8A6BBE", color: "p", position: new Animated.Value(0) },
+        { hex: "58B2DC", color: "c", position: new Animated.Value(0) },
         { hex: "00AA90", color: "g", position: new Animated.Value(0) },
-        { hex: "86C166", color: "c", position: new Animated.Value(0) },
         { hex: "F7C242", color: "y", position: new Animated.Value(0) },
         { hex: "CB1B45", color: "r", position: new Animated.Value(0) },
         { hex: "all", color: "all", position: new Animated.Value(0) }

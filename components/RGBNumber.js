@@ -1,26 +1,28 @@
-import React, { PureComponent } from "react";
-import { Animated, View, Text } from "react-native";
-import AnimatedNumber from "./AnimatedNumber.js";
-import { DURATION, FONTSIZE } from "../constant.js";
+import React, { PureComponent } from 'react'
+import { Animated, View, Text } from 'react-native'
+import AnimatedNumber from './AnimatedNumber.js'
+import { DURATION, FONTSIZE } from '../constant.js'
 export default class RGBBlock extends PureComponent {
   render() {
-    let { selectedColor, displayColor } = this.props;
+    let { selectedColor, displayColor } = this.props
     return (
       <View
         style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-between",
-          margin: 15
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+          margin: 15,
         }}
       >
         {selectedColor.Drgb.map((rgbValue, i) => (
           <React.Fragment>
-            <Animated.Text style={{ color: displayColor }}>
-              {["R", "G", "B"][i]}
+            <Animated.Text
+              style={{ color: displayColor, fontFamily: 'BPtypewrite' }}
+            >
+              {['R', 'G', 'B'][i]}
             </Animated.Text>
             <AnimatedNumber
-              displayColor={displayColor}
+              style={{ color: displayColor, fontFamily: 'BPtypewrite' }}
               key={i}
               value={rgbValue}
               duration={DURATION}
@@ -28,6 +30,6 @@ export default class RGBBlock extends PureComponent {
           </React.Fragment>
         ))}
       </View>
-    );
+    )
   }
 }
