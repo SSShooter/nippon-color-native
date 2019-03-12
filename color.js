@@ -4,7 +4,7 @@
 export default [
   {
     name: '撫子',
-    cmyk: '002043003000',
+    cmyk: [2, 43, 3, 0],
     rgb: 'DC9FB4',
     color: 'NADESHIKO',
     c: 'r',
@@ -13,7 +13,7 @@ export default [
   },
   {
     name: '紅梅',
-    cmyk: '000073024000',
+    cmyk: [0, 73, 24, 0],
     rgb: 'E16B8C',
     color: 'KOHBAI',
     c: 'r',
@@ -22,7 +22,7 @@ export default [
   },
   {
     name: '蘇芳',
-    cmyk: '051093058010',
+    cmyk: [51, 93, 58, 10],
     rgb: '8E354A',
     color: 'SUOH',
     c: 'r',
@@ -31,7 +31,7 @@ export default [
   },
   {
     name: '退紅',
-    cmyk: '000031009000',
+    cmyk: [0, 31, 9, 0],
     rgb: 'F8C3CD',
     color: 'TAIKOH',
     c: 'r',
@@ -40,7 +40,7 @@ export default [
   },
   {
     name: '一斥染',
-    cmyk: '000048015000',
+    cmyk: [0, 48, 15, 0],
     rgb: 'F4A7B9',
     color: 'IKKONZOME',
     c: 'r',
@@ -49,7 +49,7 @@ export default [
   },
   {
     name: '桑染',
-    cmyk: '069086065035',
+    cmyk: [69, 86, 65, 35],
     rgb: '64363C',
     color: 'KUWAZOME',
     c: 'r',
@@ -58,7 +58,7 @@ export default [
   },
   {
     name: '桃',
-    cmyk: '000055019000',
+    cmyk: [0, 55, 19, 0],
     rgb: 'F596AA',
     color: 'MOMO',
     c: 'r',
@@ -67,7 +67,7 @@ export default [
   },
   {
     name: '苺',
-    cmyk: '002070038030',
+    cmyk: [2, 70, 38, 30],
     rgb: 'B5495B',
     color: 'ICHIGO',
     c: 'r',
@@ -76,7 +76,7 @@ export default [
   },
   {
     name: '薄紅',
-    cmyk: '000064026000',
+    cmyk: [0, 64, 26, 0],
     rgb: 'E87A90',
     color: 'USUBENI',
     c: 'r',
@@ -85,7 +85,7 @@ export default [
   },
   {
     name: '今様',
-    cmyk: '000075038020',
+    cmyk: [0, 75, 38, 20],
     rgb: 'D05A6E',
     color: 'IMAYOH',
     c: 'r',
@@ -94,7 +94,7 @@ export default [
   },
   {
     name: '中紅',
-    cmyk: '005083040000',
+    cmyk: [5, 83, 40, 0],
     rgb: 'DB4D6D',
     color: 'NAKABENI',
     c: 'r',
@@ -103,7 +103,7 @@ export default [
   },
   {
     name: '桜',
-    cmyk: '000017006000',
+    cmyk: [0, 17, 6, 0],
     rgb: 'FEDFE1',
     color: 'SAKURA',
     c: 'w',
@@ -112,7 +112,7 @@ export default [
   },
   {
     name: '梅鼠',
-    cmyk: '048059049000',
+    cmyk: [48, 59, 49, 0],
     rgb: '9E7A7A',
     color: 'UMENEZUMI',
     c: 'r',
@@ -121,7 +121,7 @@ export default [
   },
   {
     name: '韓紅花',
-    cmyk: '015098061000',
+    cmyk: [15, 98, 61, 0],
     rgb: 'D0104C',
     color: 'KARAKURENAI',
     c: 'r',
@@ -130,7 +130,7 @@ export default [
   },
   {
     name: '燕脂',
-    cmyk: '042093068006',
+    cmyk: [42, 93, 68, 6],
     rgb: '9F353A',
     color: 'ENJI',
     c: 'r',
@@ -139,7 +139,7 @@ export default [
   },
   {
     name: '紅',
-    cmyk: '000100065010',
+    cmyk: [0, 100, 65, 10],
     rgb: 'CB1B45',
     color: 'KURENAI',
     c: 'r',
@@ -148,7 +148,7 @@ export default [
   },
   {
     name: '鴇',
-    cmyk: '002045027000',
+    cmyk: [2, 45, 27, 0],
     rgb: 'EEA9A9',
     color: 'TOKI',
     c: 'r',
@@ -157,7 +157,7 @@ export default [
   },
   {
     name: '長春',
-    cmyk: '025070053000',
+    cmyk: [25, 70, 53, 0],
     rgb: 'BF6766',
     color: 'CYOHSYUN',
     c: 'r',
@@ -166,7 +166,7 @@ export default [
   },
   {
     name: '深緋',
-    cmyk: '054075065014',
+    cmyk: [54, 75, 65, 14],
     rgb: '86473F',
     color: 'KOKIAKE',
     c: 'r',
@@ -175,7 +175,7 @@ export default [
   },
   {
     name: '桜鼠',
-    cmyk: '034046039000',
+    cmyk: [34, 46, 39, 0],
     rgb: 'B19693',
     color: 'SAKURANEZUMI',
     c: 'r',
@@ -184,7 +184,7 @@ export default [
   },
   {
     name: '甚三紅',
-    cmyk: '000065046000',
+    cmyk: [0, 65, 46, 0],
     rgb: 'EB7A77',
     color: 'JINZAMOMI',
     c: 'r',
@@ -193,7 +193,7 @@ export default [
   },
   {
     name: '小豆',
-    cmyk: '048078066010',
+    cmyk: [48, 78, 66, 10],
     rgb: '954A45',
     color: 'AZUKI',
     c: 'r',
@@ -202,7 +202,7 @@ export default [
   },
   {
     name: '蘇芳香',
-    cmyk: '042070058001',
+    cmyk: [42, 70, 58, 1],
     rgb: 'A96360',
     color: 'SUOHKOH',
     c: 'r',
@@ -211,7 +211,7 @@ export default [
   },
   {
     name: '赤紅',
-    cmyk: '015085068000',
+    cmyk: [15, 85, 68, 0],
     rgb: 'CB4042',
     color: 'AKABENI',
     c: 'r',
@@ -220,7 +220,7 @@ export default [
   },
   {
     name: '真朱',
-    cmyk: '035085070002',
+    cmyk: [35, 85, 70, 2],
     rgb: 'AB3B3A',
     color: 'SHINSYU',
     c: 'r',
@@ -229,7 +229,7 @@ export default [
   },
   {
     name: '灰桜',
-    cmyk: '002012012010',
+    cmyk: [2, 12, 12, 10],
     rgb: 'D7C4BB',
     color: 'HAIZAKURA',
     c: 'r',
@@ -238,7 +238,7 @@ export default [
   },
   {
     name: '栗梅',
-    cmyk: '050078068013',
+    cmyk: [50, 78, 68, 13],
     rgb: '904840',
     color: 'KURIUME',
     c: 'r',
@@ -247,7 +247,7 @@ export default [
   },
   {
     name: '海老茶',
-    cmyk: '055077068027',
+    cmyk: [55, 77, 68, 27],
     rgb: '734338',
     color: 'EBICHA',
     c: 'r',
@@ -256,7 +256,7 @@ export default [
   },
   {
     name: '銀朱',
-    cmyk: '016086070000',
+    cmyk: [16, 86, 70, 0],
     rgb: 'C73E3A',
     color: 'GINSYU',
     c: 'r',
@@ -265,7 +265,7 @@ export default [
   },
   {
     name: '黒鳶',
-    cmyk: '071074069041',
+    cmyk: [71, 74, 69, 41],
     rgb: '554236',
     color: 'KUROTOBI',
     c: 'r',
@@ -274,7 +274,7 @@ export default [
   },
   {
     name: '紅鳶',
-    cmyk: '045082072011',
+    cmyk: [45, 82, 72, 11],
     rgb: '994639',
     color: 'BENITOBI',
     c: 'r',
@@ -283,7 +283,7 @@ export default [
   },
   {
     name: '曙',
-    cmyk: '000057047000',
+    cmyk: [0, 57, 47, 0],
     rgb: 'F19483',
     color: 'AKEBONO',
     c: 'r',
@@ -292,7 +292,7 @@ export default [
   },
   {
     name: '紅樺',
-    cmyk: '035087079001',
+    cmyk: [35, 87, 79, 1],
     rgb: 'B54434',
     color: 'BENIKABA',
     c: 'r',
@@ -301,7 +301,7 @@ export default [
   },
   {
     name: '水がき',
-    cmyk: '030054046000',
+    cmyk: [30, 54, 46, 0],
     rgb: 'B9887D',
     color: 'MIZUGAKI',
     c: 'r',
@@ -310,7 +310,7 @@ export default [
   },
   {
     name: '珊瑚朱',
-    cmyk: '000065058000',
+    cmyk: [0, 65, 58, 0],
     rgb: 'F17C67',
     color: 'SANGOSYU',
     c: 'r',
@@ -319,7 +319,7 @@ export default [
   },
   {
     name: '紅檜皮',
-    cmyk: '052074070018',
+    cmyk: [52, 74, 70, 18],
     rgb: '884C3A',
     color: 'BENIHIWADA',
     c: 'r',
@@ -328,7 +328,7 @@ export default [
   },
   {
     name: '猩猩緋',
-    cmyk: '000089079000',
+    cmyk: [0, 89, 79, 0],
     rgb: 'E83015',
     color: 'SYOJYOHI',
     c: 'r',
@@ -337,7 +337,7 @@ export default [
   },
   {
     name: '鉛丹',
-    cmyk: '000072063007',
+    cmyk: [0, 72, 63, 7],
     rgb: 'D75455',
     color: 'ENTAN',
     c: 'r',
@@ -346,7 +346,7 @@ export default [
   },
   {
     name: '芝翫茶',
-    cmyk: '037072068000',
+    cmyk: [37, 72, 68, 0],
     rgb: 'B55D4C',
     color: 'SHIKANCHA',
     c: 'r',
@@ -355,7 +355,7 @@ export default [
   },
   {
     name: '檜皮',
-    cmyk: '049073070018',
+    cmyk: [49, 73, 70, 18],
     rgb: '854836',
     color: 'HIWADA',
     c: 'r',
@@ -364,7 +364,7 @@ export default [
   },
   {
     name: '柿渋',
-    cmyk: '043072071004',
+    cmyk: [43, 72, 71, 4],
     rgb: 'A35E47',
     color: 'KAKISHIBU',
     c: 'r',
@@ -373,7 +373,7 @@ export default [
   },
   {
     name: '緋',
-    cmyk: '017079074000',
+    cmyk: [17, 79, 74, 0],
     rgb: 'CC543A',
     color: 'AKE',
     c: 'r',
@@ -382,7 +382,7 @@ export default [
   },
   {
     name: '鳶',
-    cmyk: '058073070026',
+    cmyk: [58, 73, 70, 26],
     rgb: '724832',
     color: 'TOBI',
     c: 'r',
@@ -391,7 +391,7 @@ export default [
   },
   {
     name: '紅緋',
-    cmyk: '000075074000',
+    cmyk: [0, 75, 74, 0],
     rgb: 'F75C2F',
     color: 'BENIHI',
     c: 'r',
@@ -400,7 +400,7 @@ export default [
   },
   {
     name: '栗皮茶',
-    cmyk: '058074072030',
+    cmyk: [58, 74, 72, 30],
     rgb: '6A4028',
     color: 'KURIKAWACHA',
     c: 'r',
@@ -409,7 +409,7 @@ export default [
   },
   {
     name: '弁柄',
-    cmyk: '044074075012',
+    cmyk: [44, 74, 75, 12],
     rgb: '9A5034',
     color: 'BENGARA',
     c: 'r',
@@ -418,7 +418,7 @@ export default [
   },
   {
     name: '照柿',
-    cmyk: '024072072000',
+    cmyk: [24, 72, 72, 0],
     rgb: 'C46243',
     color: 'TERIGAKI',
     c: 'r',
@@ -427,7 +427,7 @@ export default [
   },
   {
     name: '江戸茶',
-    cmyk: '038070071003',
+    cmyk: [38, 70, 71, 3],
     rgb: 'AF5F3C',
     color: 'EDOCHA',
     c: 'r',
@@ -436,7 +436,7 @@ export default [
   },
   {
     name: '洗朱',
-    cmyk: '000054056000',
+    cmyk: [0, 54, 56, 0],
     rgb: 'FB966E',
     color: 'ARAISYU',
     c: 'r',
@@ -445,7 +445,7 @@ export default [
   },
   {
     name: '百塩茶',
-    cmyk: '061070068025',
+    cmyk: [61, 70, 68, 25],
     rgb: '724938',
     color: 'MOMOSHIOCHA',
     c: 'r',
@@ -454,7 +454,7 @@ export default [
   },
   {
     name: '唐茶',
-    cmyk: '038064065000',
+    cmyk: [38, 64, 65, 0],
     rgb: 'B47157',
     color: 'KARACHA',
     c: 'r',
@@ -463,7 +463,7 @@ export default [
   },
   {
     name: 'ときがら茶',
-    cmyk: '010055057000',
+    cmyk: [10, 55, 57, 0],
     rgb: 'DB8E71',
     color: 'TOKIGARACHA',
     c: 'r',
@@ -472,7 +472,7 @@ export default [
   },
   {
     name: '黄丹',
-    cmyk: '000072090000',
+    cmyk: [0, 72, 90, 0],
     rgb: 'F05E1C',
     color: 'OHNI',
     c: 'y',
@@ -481,7 +481,7 @@ export default [
   },
   {
     name: '纁',
-    cmyk: '000065073000',
+    cmyk: [0, 65, 73, 0],
     rgb: 'ED784A',
     color: 'SOHI',
     c: 'r',
@@ -490,7 +490,7 @@ export default [
   },
   {
     name: '遠州茶',
-    cmyk: '021064067000',
+    cmyk: [21, 64, 67, 0],
     rgb: 'CA7853',
     color: 'ENSYUCHA',
     c: 'r',
@@ -499,7 +499,7 @@ export default [
   },
   {
     name: '樺茶',
-    cmyk: '036072076002',
+    cmyk: [36, 72, 76, 2],
     rgb: 'B35C37',
     color: 'KABACHA',
     c: 'r',
@@ -508,7 +508,7 @@ export default [
   },
   {
     name: '焦茶',
-    cmyk: '068073071040',
+    cmyk: [68, 73, 71, 40],
     rgb: '563F2E',
     color: 'KOGECHA',
     c: 'b',
@@ -517,7 +517,7 @@ export default [
   },
   {
     name: '赤香',
-    cmyk: '005055060000',
+    cmyk: [5, 55, 60, 0],
     rgb: 'E3916E',
     color: 'AKAKOH',
     c: 'r',
@@ -526,7 +526,7 @@ export default [
   },
   {
     name: '雀茶',
-    cmyk: '052069073015',
+    cmyk: [52, 69, 73, 15],
     rgb: '8F5A3C',
     color: 'SUZUMECHA',
     c: 'r',
@@ -535,7 +535,7 @@ export default [
   },
   {
     name: '宍',
-    cmyk: '000047050000',
+    cmyk: [0, 47, 50, 0],
     rgb: 'F0A986',
     color: 'SHISHI',
     c: 'r',
@@ -544,7 +544,7 @@ export default [
   },
   {
     name: '宗伝唐茶',
-    cmyk: '048066070006',
+    cmyk: [48, 66, 70, 6],
     rgb: 'A0674B',
     color: 'SODENKARACHA',
     c: 'r',
@@ -553,7 +553,7 @@ export default [
   },
   {
     name: '樺',
-    cmyk: '026070078000',
+    cmyk: [26, 70, 78, 0],
     rgb: 'C1693C',
     color: 'KABA',
     c: 'r',
@@ -562,7 +562,7 @@ export default [
   },
   {
     name: '深支子',
-    cmyk: '000053065000',
+    cmyk: [0, 53, 65, 0],
     rgb: 'FB9966',
     color: 'KOKIKUCHINASHI',
     c: 'r',
@@ -571,7 +571,7 @@ export default [
   },
   {
     name: '胡桃',
-    cmyk: '051056057001',
+    cmyk: [51, 56, 57, 1],
     rgb: '947A6D',
     color: 'KURUMI',
     c: 'r',
@@ -580,7 +580,7 @@ export default [
   },
   {
     name: '代赭',
-    cmyk: '038067082003',
+    cmyk: [38, 67, 82, 3],
     rgb: 'A36336',
     color: 'TAISYA',
     c: 'r',
@@ -589,7 +589,7 @@ export default [
   },
   {
     name: '洗柿',
-    cmyk: '000053067000',
+    cmyk: [0, 53, 67, 0],
     rgb: 'E79460',
     color: 'ARAIGAKI',
     c: 'r',
@@ -598,7 +598,7 @@ export default [
   },
   {
     name: '黄櫨染',
-    cmyk: '055068078023',
+    cmyk: [55, 68, 78, 23],
     rgb: '7D532C',
     color: 'KOHROZEN',
     c: 'r',
@@ -607,7 +607,7 @@ export default [
   },
   {
     name: '赤朽葉',
-    cmyk: '005052070014',
+    cmyk: [5, 52, 70, 14],
     rgb: 'C78550',
     color: 'AKAKUCHIBA',
     c: 'r',
@@ -616,7 +616,7 @@ export default [
   },
   {
     name: '礪茶',
-    cmyk: '048066079007',
+    cmyk: [48, 66, 79, 7],
     rgb: '985F2A',
     color: 'TONOCHA',
     c: 'r',
@@ -625,7 +625,7 @@ export default [
   },
   {
     name: '赤白橡',
-    cmyk: '006042055000',
+    cmyk: [6, 42, 55, 0],
     rgb: 'E1A679',
     color: 'AKASHIROTSURUBAMI',
     c: 'r',
@@ -634,7 +634,7 @@ export default [
   },
   {
     name: '煎茶',
-    cmyk: '055066075014',
+    cmyk: [55, 66, 75, 14],
     rgb: '855B32',
     color: 'SENCHA',
     c: 'r',
@@ -643,7 +643,7 @@ export default [
   },
   {
     name: '萱草',
-    cmyk: '000049072000',
+    cmyk: [0, 49, 72, 0],
     rgb: 'FC9F4D',
     color: 'KANZO',
     c: 'r',
@@ -652,7 +652,7 @@ export default [
   },
   {
     name: '洒落柿',
-    cmyk: '000036053000',
+    cmyk: [0, 36, 53, 0],
     rgb: 'FFBA84',
     color: 'SHAREGAKI',
     c: 'r',
@@ -661,7 +661,7 @@ export default [
   },
   {
     name: '紅鬱金',
-    cmyk: '000052080000',
+    cmyk: [0, 52, 80, 0],
     rgb: 'E98B2A',
     color: 'BENIUKON',
     c: 'y',
@@ -670,7 +670,7 @@ export default [
   },
   {
     name: '梅染',
-    cmyk: '003045062000',
+    cmyk: [3, 45, 62, 0],
     rgb: 'E9A368',
     color: 'UMEZOME',
     c: 'r',
@@ -679,7 +679,7 @@ export default [
   },
   {
     name: '枇杷茶',
-    cmyk: '035058075000',
+    cmyk: [35, 58, 75, 0],
     rgb: 'B17844',
     color: 'BIWACHA',
     c: 'r',
@@ -688,7 +688,7 @@ export default [
   },
   {
     name: '丁子茶',
-    cmyk: '050061076009',
+    cmyk: [50, 61, 76, 9],
     rgb: '96632E',
     color: 'CHOJICHA',
     c: 'y',
@@ -697,7 +697,7 @@ export default [
   },
   {
     name: '憲法染',
-    cmyk: '076071073047',
+    cmyk: [76, 71, 73, 47],
     rgb: '43341B',
     color: 'KENPOHZOME',
     c: 'b',
@@ -706,7 +706,7 @@ export default [
   },
   {
     name: '琥珀',
-    cmyk: '020058085000',
+    cmyk: [20, 58, 85, 0],
     rgb: 'CA7A2C',
     color: 'KOHAKU',
     c: 'r',
@@ -715,7 +715,7 @@ export default [
   },
   {
     name: '薄柿',
-    cmyk: '000034052000',
+    cmyk: [0, 34, 52, 0],
     rgb: 'ECB88A',
     color: 'USUGAKI',
     c: 'r',
@@ -724,7 +724,7 @@ export default [
   },
   {
     name: '伽羅',
-    cmyk: '058062072016',
+    cmyk: [58, 62, 72, 16],
     rgb: '78552B',
     color: 'KYARA',
     c: 'y',
@@ -733,7 +733,7 @@ export default [
   },
   {
     name: '丁子染',
-    cmyk: '036057079000',
+    cmyk: [36, 57, 79, 0],
     rgb: 'B07736',
     color: 'CHOJIZOME',
     c: 'y',
@@ -742,7 +742,7 @@ export default [
   },
   {
     name: '柴染',
-    cmyk: '050056071005',
+    cmyk: [50, 56, 71, 5],
     rgb: '967249',
     color: 'FUSHIZOME',
     c: 'y',
@@ -751,7 +751,7 @@ export default [
   },
   {
     name: '朽葉',
-    cmyk: '007049080000',
+    cmyk: [7, 49, 80, 0],
     rgb: 'E2943B',
     color: 'KUCHIBA',
     c: 'y',
@@ -760,7 +760,7 @@ export default [
   },
   {
     name: '金茶',
-    cmyk: '020056089000',
+    cmyk: [20, 56, 89, 0],
     rgb: 'C7802D',
     color: 'KINCHA',
     c: 'y',
@@ -769,7 +769,7 @@ export default [
   },
   {
     name: '狐',
-    cmyk: '046057080004',
+    cmyk: [46, 57, 80, 4],
     rgb: '9B6E23',
     color: 'KITSUNE',
     c: 'y',
@@ -778,7 +778,7 @@ export default [
   },
   {
     name: '煤竹',
-    cmyk: '062063073021',
+    cmyk: [62, 63, 73, 21],
     rgb: '6E552F',
     color: 'SUSUTAKE',
     c: 'y',
@@ -787,7 +787,7 @@ export default [
   },
   {
     name: '薄香',
-    cmyk: '000034060000',
+    cmyk: [0, 34, 60, 0],
     rgb: 'EBB471',
     color: 'USUKOH',
     c: 'y',
@@ -796,7 +796,7 @@ export default [
   },
   {
     name: '砥粉',
-    cmyk: '005020038015',
+    cmyk: [5, 20, 38, 15],
     rgb: 'D7B98E',
     color: 'TONOKO',
     c: 'y',
@@ -805,7 +805,7 @@ export default [
   },
   {
     name: '銀煤竹',
-    cmyk: '054058076010',
+    cmyk: [54, 58, 76, 10],
     rgb: '82663A',
     color: 'GINSUSUTAKE',
     c: 'y',
@@ -814,7 +814,7 @@ export default [
   },
   {
     name: '黄土',
-    cmyk: '031045066000',
+    cmyk: [31, 45, 66, 0],
     rgb: 'B68E55',
     color: 'OHDO',
     c: 'y',
@@ -823,7 +823,7 @@ export default [
   },
   {
     name: '白茶',
-    cmyk: '032040057000',
+    cmyk: [32, 40, 57, 0],
     rgb: 'BC9F77',
     color: 'SHIRACHA',
     c: 'y',
@@ -832,7 +832,7 @@ export default [
   },
   {
     name: '媚茶',
-    cmyk: '058059078014',
+    cmyk: [58, 59, 78, 14],
     rgb: '876633',
     color: 'KOBICHA',
     c: 'y',
@@ -841,7 +841,7 @@ export default [
   },
   {
     name: '黄唐茶',
-    cmyk: '028048083000',
+    cmyk: [28, 48, 83, 0],
     rgb: 'C18A26',
     color: 'KIGARACHA',
     c: 'y',
@@ -850,7 +850,7 @@ export default [
   },
   {
     name: '山吹',
-    cmyk: '000037087000',
+    cmyk: [0, 37, 87, 0],
     rgb: 'FFB11B',
     color: 'YAMABUKI',
     c: 'y',
@@ -859,7 +859,7 @@ export default [
   },
   {
     name: '山吹茶',
-    cmyk: '017044089000',
+    cmyk: [17, 44, 89, 0],
     rgb: 'D19826',
     color: 'YAMABUKICHA',
     c: 'y',
@@ -868,7 +868,7 @@ export default [
   },
   {
     name: '櫨染',
-    cmyk: '008040083000',
+    cmyk: [8, 40, 83, 0],
     rgb: 'DDA52D',
     color: 'HAJIZOME',
     c: 'y',
@@ -877,7 +877,7 @@ export default [
   },
   {
     name: '桑茶',
-    cmyk: '025044083000',
+    cmyk: [25, 44, 83, 0],
     rgb: 'C99833',
     color: 'KUWACHA',
     c: 'y',
@@ -886,7 +886,7 @@ export default [
   },
   {
     name: '玉子',
-    cmyk: '000029074000',
+    cmyk: [0, 29, 74, 0],
     rgb: 'F9BF45',
     color: 'TAMAGO',
     c: 'y',
@@ -895,7 +895,7 @@ export default [
   },
   {
     name: '白橡',
-    cmyk: '016030060000',
+    cmyk: [16, 30, 60, 0],
     rgb: 'DCB879',
     color: 'SHIROTSURUBAMI',
     c: 'y',
@@ -904,7 +904,7 @@ export default [
   },
   {
     name: '黄橡',
-    cmyk: '031044077000',
+    cmyk: [31, 44, 77, 0],
     rgb: 'BA9132',
     color: 'KITSURUBAMI',
     c: 'y',
@@ -913,7 +913,7 @@ export default [
   },
   {
     name: '玉蜀黍',
-    cmyk: '004029071000',
+    cmyk: [4, 29, 71, 0],
     rgb: 'E8B647',
     color: 'TAMAMOROKOSHI',
     c: 'y',
@@ -922,7 +922,7 @@ export default [
   },
   {
     name: '花葉',
-    cmyk: '000025072000',
+    cmyk: [0, 25, 72, 0],
     rgb: 'F7C242',
     color: 'HANABA',
     c: 'y',
@@ -931,7 +931,7 @@ export default [
   },
   {
     name: '生壁',
-    cmyk: '058056070008',
+    cmyk: [58, 56, 70, 8],
     rgb: '7D6C46',
     color: 'NAMAKABE',
     c: 'y',
@@ -940,7 +940,7 @@ export default [
   },
   {
     name: '鳥の子',
-    cmyk: '014020039000',
+    cmyk: [14, 20, 39, 0],
     rgb: 'DAC9A6',
     color: 'TORINOKO',
     c: 'y',
@@ -949,7 +949,7 @@ export default [
   },
   {
     name: '浅黄',
-    cmyk: '000017053000',
+    cmyk: [0, 17, 53, 0],
     rgb: 'FAD689',
     color: 'USUKI',
     c: 'y',
@@ -958,7 +958,7 @@ export default [
   },
   {
     name: '黄朽葉',
-    cmyk: '014033075000',
+    cmyk: [14, 33, 75, 0],
     rgb: 'D9AB42',
     color: 'KIKUCHIBA',
     c: 'y',
@@ -967,7 +967,7 @@ export default [
   },
   {
     name: '梔子',
-    cmyk: '000025070000',
+    cmyk: [0, 25, 70, 0],
     rgb: 'F6C555',
     color: 'KUCHINASHI',
     c: 'y',
@@ -976,7 +976,7 @@ export default [
   },
   {
     name: '籐黄',
-    cmyk: '000025086000',
+    cmyk: [0, 25, 86, 0],
     rgb: 'FFC408',
     color: 'TOHOH',
     c: 'y',
@@ -985,7 +985,7 @@ export default [
   },
   {
     name: '鬱金',
-    cmyk: '003029088000',
+    cmyk: [3, 29, 88, 0],
     rgb: 'EFBB24',
     color: 'UKON',
     c: 'y',
@@ -994,7 +994,7 @@ export default [
   },
   {
     name: '芥子',
-    cmyk: '000016070027',
+    cmyk: [0, 16, 70, 27],
     rgb: 'CAAD5F',
     color: 'KARASHI',
     c: 'y',
@@ -1003,7 +1003,7 @@ export default [
   },
   {
     name: '肥後煤竹',
-    cmyk: '055053082007',
+    cmyk: [55, 53, 82, 7],
     rgb: '8D742A',
     color: 'HIGOSUSUTAKE',
     c: 'y',
@@ -1012,7 +1012,7 @@ export default [
   },
   {
     name: '利休白茶',
-    cmyk: '036033054000',
+    cmyk: [36, 33, 54, 0],
     rgb: 'B4A582',
     color: 'RIKYUSHIRACHA',
     c: 'y',
@@ -1021,7 +1021,7 @@ export default [
   },
   {
     name: '灰汁',
-    cmyk: '058051060001',
+    cmyk: [58, 51, 60, 1],
     rgb: '877F6C',
     color: 'AKU',
     c: 'y',
@@ -1030,7 +1030,7 @@ export default [
   },
   {
     name: '利休茶',
-    cmyk: '057050070003',
+    cmyk: [57, 50, 70, 3],
     rgb: '897D55',
     color: 'RIKYUCHA',
     c: 'y',
@@ -1039,7 +1039,7 @@ export default [
   },
   {
     name: '路考茶',
-    cmyk: '064057073010',
+    cmyk: [64, 57, 73, 10],
     rgb: '74673E',
     color: 'ROKOHCHA',
     c: 'y',
@@ -1048,7 +1048,7 @@ export default [
   },
   {
     name: '菜種油',
-    cmyk: '046042084000',
+    cmyk: [46, 42, 84, 0],
     rgb: 'A28C37',
     color: 'NATANEYU',
     c: 'y',
@@ -1057,7 +1057,7 @@ export default [
   },
   {
     name: '鶯茶',
-    cmyk: '064056078016',
+    cmyk: [64, 56, 78, 16],
     rgb: '6C6024',
     color: 'UGUISUCHA',
     c: 'y',
@@ -1066,7 +1066,7 @@ export default [
   },
   {
     name: '黄海松茶',
-    cmyk: '057048078006',
+    cmyk: [57, 48, 78, 6],
     rgb: '867835',
     color: 'KIMIRUCHA',
     c: 'y',
@@ -1075,7 +1075,7 @@ export default [
   },
   {
     name: '海松茶',
-    cmyk: '068059075022',
+    cmyk: [68, 59, 75, 22],
     rgb: '62592C',
     color: 'MIRUCHA',
     c: 'y',
@@ -1084,7 +1084,7 @@ export default [
   },
   {
     name: '刈安',
-    cmyk: '007015074000',
+    cmyk: [7, 15, 74, 0],
     rgb: 'E9CD4C',
     color: 'KARIYASU',
     c: 'y',
@@ -1093,7 +1093,7 @@ export default [
   },
   {
     name: '菜の花',
-    cmyk: '002011075000',
+    cmyk: [2, 11, 75, 0],
     rgb: 'F7D94C',
     color: 'NANOHANA',
     c: 'y',
@@ -1102,7 +1102,7 @@ export default [
   },
   {
     name: '黄蘗',
-    cmyk: '000005073000',
+    cmyk: [0, 5, 73, 0],
     rgb: 'FBE251',
     color: 'KIHADA',
     c: 'y',
@@ -1111,7 +1111,7 @@ export default [
   },
   {
     name: '蒸栗',
-    cmyk: '016015052000',
+    cmyk: [16, 15, 52, 0],
     rgb: 'D9CD90',
     color: 'MUSHIKURI',
     c: 'y',
@@ -1120,7 +1120,7 @@ export default [
   },
   {
     name: '青朽葉',
-    cmyk: '038031076000',
+    cmyk: [38, 31, 76, 0],
     rgb: 'ADA142',
     color: 'AOKUCHIBA',
     c: 'y',
@@ -1129,7 +1129,7 @@ export default [
   },
   {
     name: '女郎花',
-    cmyk: '016009082000',
+    cmyk: [16, 9, 82, 0],
     rgb: 'DDD23B',
     color: 'OMINAESHI',
     c: 'y',
@@ -1138,7 +1138,7 @@ export default [
   },
   {
     name: '鶸茶',
-    cmyk: '045033076000',
+    cmyk: [45, 33, 76, 0],
     rgb: 'A5A051',
     color: 'HIWACHA',
     c: 'y',
@@ -1147,7 +1147,7 @@ export default [
   },
   {
     name: '鶸',
-    cmyk: '032015085000',
+    cmyk: [32, 15, 85, 0],
     rgb: 'BEC23F',
     color: 'HIWA',
     c: 'y',
@@ -1156,7 +1156,7 @@ export default [
   },
   {
     name: '鶯',
-    cmyk: '067054084014',
+    cmyk: [67, 54, 84, 14],
     rgb: '6C6A2D',
     color: 'UGUISU',
     c: 'y',
@@ -1165,7 +1165,7 @@ export default [
   },
   {
     name: '柳茶',
-    cmyk: '052037073000',
+    cmyk: [52, 37, 73, 0],
     rgb: '939650',
     color: 'YANAGICHA',
     c: 'y',
@@ -1174,7 +1174,7 @@ export default [
   },
   {
     name: '苔',
-    cmyk: '062041083002',
+    cmyk: [62, 41, 83, 2],
     rgb: '838A2D',
     color: 'KOKE',
     c: 'y',
@@ -1183,7 +1183,7 @@ export default [
   },
   {
     name: '麹塵',
-    cmyk: '037023063000',
+    cmyk: [37, 23, 63, 0],
     rgb: 'B1B479',
     color: 'KIKUJIN',
     c: 'y',
@@ -1192,7 +1192,7 @@ export default [
   },
   {
     name: '璃寛茶',
-    cmyk: '072058073019',
+    cmyk: [72, 58, 73, 19],
     rgb: '616138',
     color: 'RIKANCHA',
     c: 'y',
@@ -1201,7 +1201,7 @@ export default [
   },
   {
     name: '藍媚茶',
-    cmyk: '076061074030',
+    cmyk: [76, 61, 74, 30],
     rgb: '4B4E2A',
     color: 'AIKOBICHA',
     c: 'y',
@@ -1210,7 +1210,7 @@ export default [
   },
   {
     name: '海松',
-    cmyk: '072056078020',
+    cmyk: [72, 56, 78, 20],
     rgb: '5B622E',
     color: 'MIRU',
     c: 'y',
@@ -1219,7 +1219,7 @@ export default [
   },
   {
     name: '千歳茶',
-    cmyk: '077061070030',
+    cmyk: [77, 61, 70, 30],
     rgb: '4D5139',
     color: 'SENSAICHA',
     c: 'y',
@@ -1228,7 +1228,7 @@ export default [
   },
   {
     name: '梅幸茶',
-    cmyk: '057038063000',
+    cmyk: [57, 38, 63, 0],
     rgb: '89916B',
     color: 'BAIKOCHA',
     c: 'y',
@@ -1237,7 +1237,7 @@ export default [
   },
   {
     name: '鶸萌黄',
-    cmyk: '056013077000',
+    cmyk: [56, 13, 77, 0],
     rgb: '90B44B',
     color: 'HIWAMOEGI',
     c: 'g',
@@ -1246,7 +1246,7 @@ export default [
   },
   {
     name: '柳染',
-    cmyk: '056024065000',
+    cmyk: [56, 24, 65, 0],
     rgb: '91AD70',
     color: 'YANAGIZOME',
     c: 'y',
@@ -1255,7 +1255,7 @@ export default [
   },
   {
     name: '裏柳',
-    cmyk: '036010045000',
+    cmyk: [36, 10, 45, 0],
     rgb: 'B5CAA0',
     color: 'URAYANAGI',
     c: 'y',
@@ -1264,7 +1264,7 @@ export default [
   },
   {
     name: '岩井茶',
-    cmyk: '069052063007',
+    cmyk: [69, 52, 63, 7],
     rgb: '646A58',
     color: 'IWAICHA',
     c: 'b',
@@ -1273,7 +1273,7 @@ export default [
   },
   {
     name: '萌黄',
-    cmyk: '070023086000',
+    cmyk: [70, 23, 86, 0],
     rgb: '7BA23F',
     color: 'MOEGI',
     c: 'g',
@@ -1282,7 +1282,7 @@ export default [
   },
   {
     name: '苗',
-    cmyk: '057001072000',
+    cmyk: [57, 1, 72, 0],
     rgb: '86C166',
     color: 'NAE',
     c: 'g',
@@ -1291,7 +1291,7 @@ export default [
   },
   {
     name: '柳煤竹',
-    cmyk: '076057070017',
+    cmyk: [76, 57, 70, 17],
     rgb: '4A593D',
     color: 'YANAGISUSUTAKE',
     c: 'g',
@@ -1300,7 +1300,7 @@ export default [
   },
   {
     name: '松葉',
-    cmyk: '080055079020',
+    cmyk: [80, 55, 79, 20],
     rgb: '42602D',
     color: 'MATSUBA',
     c: 'g',
@@ -1309,7 +1309,7 @@ export default [
   },
   {
     name: '青丹',
-    cmyk: '076051075012',
+    cmyk: [76, 51, 75, 12],
     rgb: '516E41',
     color: 'AONI',
     c: 'g',
@@ -1318,7 +1318,7 @@ export default [
   },
   {
     name: '薄青',
-    cmyk: '057019052000',
+    cmyk: [57, 19, 52, 0],
     rgb: '91B493',
     color: 'USUAO',
     c: 'g',
@@ -1327,7 +1327,7 @@ export default [
   },
   {
     name: '柳鼠',
-    cmyk: '061041053000',
+    cmyk: [61, 41, 53, 0],
     rgb: '808F7C',
     color: 'YANAGINEZUMI',
     c: 'b',
@@ -1336,7 +1336,7 @@ export default [
   },
   {
     name: '常磐',
-    cmyk: '082000078040',
+    cmyk: [82, 0, 78, 40],
     rgb: '1B813E',
     color: 'TOKIWA',
     c: 'g',
@@ -1345,7 +1345,7 @@ export default [
   },
   {
     name: '若竹',
-    cmyk: '068013059000',
+    cmyk: [68, 13, 59, 0],
     rgb: '5DAC81',
     color: 'WAKATAKE',
     c: 'g',
@@ -1354,7 +1354,7 @@ export default [
   },
   {
     name: '千歳緑',
-    cmyk: '083055069022',
+    cmyk: [83, 55, 69, 22],
     rgb: '36563C',
     color: 'CHITOSEMIDORI',
     c: 'g',
@@ -1363,7 +1363,7 @@ export default [
   },
   {
     name: '緑',
-    cmyk: '086036070000',
+    cmyk: [86, 36, 70, 0],
     rgb: '227D51',
     color: 'MIDORI',
     c: 'g',
@@ -1372,7 +1372,7 @@ export default [
   },
   {
     name: '白緑',
-    cmyk: '044000037000',
+    cmyk: [44, 0, 37, 0],
     rgb: 'A8D8B9',
     color: 'BYAKUROKU',
     c: 'g',
@@ -1381,7 +1381,7 @@ export default [
   },
   {
     name: '老竹',
-    cmyk: '071046060002',
+    cmyk: [71, 46, 60, 2],
     rgb: '6A8372',
     color: 'OITAKE',
     c: 'g',
@@ -1390,7 +1390,7 @@ export default [
   },
   {
     name: '木賊',
-    cmyk: '086046070008',
+    cmyk: [86, 46, 70, 8],
     rgb: '2D6D4B',
     color: 'TOKUSA',
     c: 'g',
@@ -1399,7 +1399,7 @@ export default [
   },
   {
     name: '御納戸茶',
-    cmyk: '081060068022',
+    cmyk: [81, 60, 68, 22],
     rgb: '465D4C',
     color: 'ONANDOCHA',
     c: 'g',
@@ -1408,7 +1408,7 @@ export default [
   },
   {
     name: '緑青',
-    cmyk: '083023063000',
+    cmyk: [83, 23, 63, 0],
     rgb: '24936E',
     color: 'ROKUSYOH',
     c: 'g',
@@ -1417,7 +1417,7 @@ export default [
   },
   {
     name: '錆青磁',
-    cmyk: '058030045000',
+    cmyk: [58, 30, 45, 0],
     rgb: '86A697',
     color: 'SABISEIJI',
     c: 'c',
@@ -1426,7 +1426,7 @@ export default [
   },
   {
     name: '青竹',
-    cmyk: '092028067000',
+    cmyk: [92, 28, 67, 0],
     rgb: '00896C',
     color: 'AOTAKE',
     c: 'g',
@@ -1435,7 +1435,7 @@ export default [
   },
   {
     name: 'ビロード',
-    cmyk: '093054071020',
+    cmyk: [93, 54, 71, 20],
     rgb: '096148',
     color: 'VELUDO',
     c: 'g',
@@ -1444,7 +1444,7 @@ export default [
   },
   {
     name: '虫襖',
-    cmyk: '089055067017',
+    cmyk: [89, 55, 67, 17],
     rgb: '20604F',
     color: 'MUSHIAO',
     c: 'c',
@@ -1453,7 +1453,7 @@ export default [
   },
   {
     name: '藍海松茶',
-    cmyk: '089060067030',
+    cmyk: [89, 60, 67, 30],
     rgb: '0F4C3A',
     color: 'AIMIRUCHA',
     c: 'b',
@@ -1462,7 +1462,7 @@ export default [
   },
   {
     name: '沈香茶',
-    cmyk: '077050057004',
+    cmyk: [77, 50, 57, 4],
     rgb: '4F726C',
     color: 'TONOCHA2',
     c: 'b',
@@ -1471,7 +1471,7 @@ export default [
   },
   {
     name: '青緑',
-    cmyk: '088000053000',
+    cmyk: [88, 0, 53, 0],
     rgb: '00AA90',
     color: 'AOMIDORI',
     c: 'g',
@@ -1480,7 +1480,7 @@ export default [
   },
   {
     name: '青磁',
-    cmyk: '061014034000',
+    cmyk: [61, 14, 34, 0],
     rgb: '69B0AC',
     color: 'SEIJI',
     c: 'g',
@@ -1489,7 +1489,7 @@ export default [
   },
   {
     name: '鉄',
-    cmyk: '090063066030',
+    cmyk: [90, 63, 66, 30],
     rgb: '26453D',
     color: 'TETSU',
     c: 'b',
@@ -1498,7 +1498,7 @@ export default [
   },
   {
     name: '水浅葱',
-    cmyk: '068010033000',
+    cmyk: [68, 10, 33, 0],
     rgb: '66BAB7',
     color: 'MIZUASAGI',
     c: 'g',
@@ -1507,7 +1507,7 @@ export default [
   },
   {
     name: '青碧',
-    cmyk: '085035050000',
+    cmyk: [85, 35, 50, 0],
     rgb: '268785',
     color: 'SEIHEKI',
     c: 'c',
@@ -1516,7 +1516,7 @@ export default [
   },
   {
     name: '錆鉄御納戸',
-    cmyk: '083059060013',
+    cmyk: [83, 59, 60, 13],
     rgb: '405B55',
     color: 'SABITETSUONANDO',
     c: 'b',
@@ -1525,7 +1525,7 @@ export default [
   },
   {
     name: '高麗納戸',
-    cmyk: '088058061015',
+    cmyk: [88, 58, 61, 15],
     rgb: '305A56',
     color: 'KORAINANDO',
     c: 'b',
@@ -1534,7 +1534,7 @@ export default [
   },
   {
     name: '白群',
-    cmyk: '052000020000',
+    cmyk: [52, 0, 20, 0],
     rgb: '78C2C4',
     color: 'BYAKUGUN',
     c: 'g',
@@ -1543,7 +1543,7 @@ export default [
   },
   {
     name: '御召茶',
-    cmyk: '087054054005',
+    cmyk: [87, 54, 54, 5],
     rgb: '376B6D',
     color: 'OMESHICHA',
     c: 'g',
@@ -1552,7 +1552,7 @@ export default [
   },
   {
     name: '瓶覗',
-    cmyk: '042000011000',
+    cmyk: [42, 0, 11, 0],
     rgb: 'A5DEE4',
     color: 'KAMENOZOKI',
     c: 'c',
@@ -1561,7 +1561,7 @@ export default [
   },
   {
     name: '深川鼠',
-    cmyk: '063038040000',
+    cmyk: [63, 38, 40, 0],
     rgb: '77969A',
     color: 'FUKAGAWANEZUMI',
     c: 'b',
@@ -1570,7 +1570,7 @@ export default [
   },
   {
     name: '錆浅葱',
-    cmyk: '066030034000',
+    cmyk: [66, 30, 34, 0],
     rgb: '6699A1',
     color: 'SABIASAGI',
     c: 'c',
@@ -1579,7 +1579,7 @@ export default [
   },
   {
     name: '水',
-    cmyk: '055006017000',
+    cmyk: [55, 6, 17, 0],
     rgb: '81C7D4',
     color: 'MIZU',
     c: 'c',
@@ -1588,7 +1588,7 @@ export default [
   },
   {
     name: '浅葱',
-    cmyk: '082018027000',
+    cmyk: [82, 18, 27, 0],
     rgb: '33A6B8',
     color: 'ASAGI',
     c: 'c',
@@ -1597,7 +1597,7 @@ export default [
   },
   {
     name: '御納戸',
-    cmyk: '092065062025',
+    cmyk: [92, 65, 62, 25],
     rgb: '0C4842',
     color: 'ONANDO',
     c: 'c',
@@ -1606,7 +1606,7 @@ export default [
   },
   {
     name: '藍',
-    cmyk: '095063056017',
+    cmyk: [95, 63, 56, 17],
     rgb: '0D5661',
     color: 'AI',
     c: 'c',
@@ -1615,7 +1615,7 @@ export default [
   },
   {
     name: '新橋',
-    cmyk: '095031030000',
+    cmyk: [95, 31, 30, 0],
     rgb: '0089A7',
     color: 'SHINBASHI',
     c: 'c',
@@ -1624,7 +1624,7 @@ export default [
   },
   {
     name: '錆御納戸',
-    cmyk: '087056052006',
+    cmyk: [87, 56, 52, 6],
     rgb: '336774',
     color: 'SABIONANDO',
     c: 'c',
@@ -1633,7 +1633,7 @@ export default [
   },
   {
     name: '鉄御納戸',
-    cmyk: '090063059021',
+    cmyk: [90, 63, 59, 21],
     rgb: '255359',
     color: 'TETSUONANDO',
     c: 'c',
@@ -1642,7 +1642,7 @@ export default [
   },
   {
     name: '花浅葱',
-    cmyk: '090032023000',
+    cmyk: [90, 32, 23, 0],
     rgb: '1E88A8',
     color: 'HANAASAGI',
     c: 'c',
@@ -1651,7 +1651,7 @@ export default [
   },
   {
     name: '藍鼠',
-    cmyk: '078057052007',
+    cmyk: [78, 57, 52, 7],
     rgb: '566C73',
     color: 'AINEZUMI',
     c: 'c',
@@ -1660,7 +1660,7 @@ export default [
   },
   {
     name: '舛花',
-    cmyk: '078048042000',
+    cmyk: [78, 48, 42, 0],
     rgb: '577C8A',
     color: 'MASUHANA',
     c: 'c',
@@ -1669,7 +1669,7 @@ export default [
   },
   {
     name: '空',
-    cmyk: '072013007000',
+    cmyk: [72, 13, 7, 0],
     rgb: '58B2DC',
     color: 'SORA',
     c: 'c',
@@ -1678,7 +1678,7 @@ export default [
   },
   {
     name: '熨斗目花',
-    cmyk: '092060047004',
+    cmyk: [92, 60, 47, 4],
     rgb: '2B5F75',
     color: 'NOSHIMEHANA',
     c: 'c',
@@ -1687,7 +1687,7 @@ export default [
   },
   {
     name: '千草',
-    cmyk: '083031017000',
+    cmyk: [83, 31, 17, 0],
     rgb: '3A8FB7',
     color: 'CHIGUSA',
     c: 'c',
@@ -1696,7 +1696,7 @@ export default [
   },
   {
     name: '御召御納戸',
-    cmyk: '090063051007',
+    cmyk: [90, 63, 51, 7],
     rgb: '2E5C6E',
     color: 'OMESHIONANDO',
     c: 'c',
@@ -1705,7 +1705,7 @@ export default [
   },
   {
     name: '縹',
-    cmyk: '100060041002',
+    cmyk: [100, 60, 41, 2],
     rgb: '006284',
     color: 'HANADA',
     c: 'c',
@@ -1714,7 +1714,7 @@ export default [
   },
   {
     name: '勿忘草',
-    cmyk: '052010000000',
+    cmyk: [52, 10, 0, 0],
     rgb: '7DB9DE',
     color: 'WASURENAGUSA',
     c: 'c',
@@ -1723,7 +1723,7 @@ export default [
   },
   {
     name: '群青',
-    cmyk: '067021000000',
+    cmyk: [67, 21, 0, 0],
     rgb: '51A8DD',
     color: 'GUNJYO',
     c: 'c',
@@ -1732,7 +1732,7 @@ export default [
   },
   {
     name: '露草',
-    cmyk: '073020000000',
+    cmyk: [73, 20, 0, 0],
     rgb: '2EA9DF',
     color: 'TSUYUKUSA',
     c: 'c',
@@ -1741,7 +1741,7 @@ export default [
   },
   {
     name: '黒橡',
-    cmyk: '092078064048',
+    cmyk: [92, 78, 64, 48],
     rgb: '0B1013',
     color: 'KUROTSURUBAMI',
     c: 'b',
@@ -1750,7 +1750,7 @@ export default [
   },
   {
     name: '紺',
-    cmyk: '100085050024',
+    cmyk: [100, 85, 50, 24],
     rgb: '0F2540',
     color: 'KON',
     c: 'b',
@@ -1759,7 +1759,7 @@ export default [
   },
   {
     name: '褐',
-    cmyk: '100086060045',
+    cmyk: [100, 86, 60, 45],
     rgb: '08192D',
     color: 'KACHI',
     c: 'b',
@@ -1768,7 +1768,7 @@ export default [
   },
   {
     name: '瑠璃',
-    cmyk: '097065000000',
+    cmyk: [97, 65, 0, 0],
     rgb: '005CAF',
     color: 'RURI',
     c: 'c',
@@ -1777,7 +1777,7 @@ export default [
   },
   {
     name: '瑠璃紺',
-    cmyk: '100085039004',
+    cmyk: [100, 85, 39, 4],
     rgb: '0B346E',
     color: 'RURIKON',
     c: 'c',
@@ -1786,7 +1786,7 @@ export default [
   },
   {
     name: '紅碧',
-    cmyk: '064044000000',
+    cmyk: [64, 44, 0, 0],
     rgb: '7B90D2',
     color: 'BENIMIDORI',
     c: 'c',
@@ -1795,7 +1795,7 @@ export default [
   },
   {
     name: '藤鼠',
-    cmyk: '069056017000',
+    cmyk: [69, 56, 17, 0],
     rgb: '6E75A4',
     color: 'FUJINEZUMI',
     c: 'p',
@@ -1804,7 +1804,7 @@ export default [
   },
   {
     name: '鉄紺',
-    cmyk: '080065000077',
+    cmyk: [80, 65, 0, 77],
     rgb: '261E47',
     color: 'TETSUKON',
     c: 'c',
@@ -1813,7 +1813,7 @@ export default [
   },
   {
     name: '紺青',
-    cmyk: '100085015000',
+    cmyk: [100, 85, 15, 0],
     rgb: '113285',
     color: 'KONJYO',
     c: 'c',
@@ -1822,7 +1822,7 @@ export default [
   },
   {
     name: '紅掛花',
-    cmyk: '082070014000',
+    cmyk: [82, 70, 14, 0],
     rgb: '4E4F97',
     color: 'BENIKAKEHANA',
     c: 'c',
@@ -1831,7 +1831,7 @@ export default [
   },
   {
     name: '紺桔梗',
-    cmyk: '100090042012',
+    cmyk: [100, 90, 42, 12],
     rgb: '211E55',
     color: 'KONKIKYO',
     c: 'c',
@@ -1840,7 +1840,7 @@ export default [
   },
   {
     name: '藤',
-    cmyk: '058052000000',
+    cmyk: [58, 52, 0, 0],
     rgb: '8B81C3',
     color: 'FUJI',
     c: 'p',
@@ -1849,7 +1849,7 @@ export default [
   },
   {
     name: '二藍',
-    cmyk: '072067021000',
+    cmyk: [72, 67, 21, 0],
     rgb: '70649A',
     color: 'FUTAAI',
     c: 'p',
@@ -1858,7 +1858,7 @@ export default [
   },
   {
     name: '楝',
-    cmyk: '042042000000',
+    cmyk: [42, 42, 0, 0],
     rgb: '9B90C2',
     color: 'OUCHI',
     c: 'p',
@@ -1867,7 +1867,7 @@ export default [
   },
   {
     name: '藤紫',
-    cmyk: '058060000000',
+    cmyk: [58, 60, 0, 0],
     rgb: '8A6BBE',
     color: 'FUJIMURASAKI',
     c: 'p',
@@ -1876,7 +1876,7 @@ export default [
   },
   {
     name: '桔梗',
-    cmyk: '075075010000',
+    cmyk: [75, 75, 10, 0],
     rgb: '6A4C9C',
     color: 'KIKYO',
     c: 'p',
@@ -1885,7 +1885,7 @@ export default [
   },
   {
     name: '紫苑',
-    cmyk: '055058001000',
+    cmyk: [55, 58, 1, 0],
     rgb: '8F77B5',
     color: 'SHION',
     c: 'p',
@@ -1894,7 +1894,7 @@ export default [
   },
   {
     name: '滅紫',
-    cmyk: '082080048015',
+    cmyk: [82, 80, 48, 15],
     rgb: '533D5B',
     color: 'MESSHI',
     c: 'p',
@@ -1903,7 +1903,7 @@ export default [
   },
   {
     name: '薄',
-    cmyk: '043051000000',
+    cmyk: [43, 51, 0, 0],
     rgb: 'B28FCE',
     color: 'USU',
     c: 'p',
@@ -1912,7 +1912,7 @@ export default [
   },
   {
     name: '半',
-    cmyk: '055063000000',
+    cmyk: [55, 63, 0, 0],
     rgb: '986DB2',
     color: 'HASHITA',
     c: 'p',
@@ -1921,7 +1921,7 @@ export default [
   },
   {
     name: '江戸紫',
-    cmyk: '060074000014',
+    cmyk: [60, 74, 0, 14],
     rgb: '77428D',
     color: 'EDOMURASAKI',
     c: 'p',
@@ -1930,7 +1930,7 @@ export default [
   },
   {
     name: '紫紺',
-    cmyk: '088084060045',
+    cmyk: [88, 84, 60, 45],
     rgb: '3C2F41',
     color: 'SHIKON',
     c: 'b',
@@ -1939,7 +1939,7 @@ export default [
   },
   {
     name: '深紫',
-    cmyk: '090093043016',
+    cmyk: [90, 93, 43, 16],
     rgb: '4A225D',
     color: 'KOKIMURASAKI',
     c: 'p',
@@ -1948,7 +1948,7 @@ export default [
   },
   {
     name: '菫',
-    cmyk: '074083022000',
+    cmyk: [74, 83, 22, 0],
     rgb: '66327C',
     color: 'SUMIRE',
     c: 'p',
@@ -1957,7 +1957,7 @@ export default [
   },
   {
     name: '紫',
-    cmyk: '081087040007',
+    cmyk: [81, 87, 40, 7],
     rgb: '592C63',
     color: 'MURASAKI',
     c: 'p',
@@ -1966,7 +1966,7 @@ export default [
   },
   {
     name: '菖蒲',
-    cmyk: '071087014000',
+    cmyk: [71, 87, 14, 0],
     rgb: '6F3381',
     color: 'AYAME',
     c: 'p',
@@ -1975,7 +1975,7 @@ export default [
   },
   {
     name: '藤煤竹',
-    cmyk: '075070057025',
+    cmyk: [75, 70, 57, 25],
     rgb: '574C57',
     color: 'FUJISUSUTAKE',
     c: 'b',
@@ -1984,7 +1984,7 @@ export default [
   },
   {
     name: '紅藤',
-    cmyk: '038060000000',
+    cmyk: [38, 60, 0, 0],
     rgb: 'B481BB',
     color: 'BENIFUJI',
     c: 'p',
@@ -1993,7 +1993,7 @@ export default [
   },
   {
     name: '黒紅',
-    cmyk: '086085064050',
+    cmyk: [86, 85, 64, 50],
     rgb: '3F2B36',
     color: 'KUROBENI',
     c: 'b',
@@ -2002,7 +2002,7 @@ export default [
   },
   {
     name: '茄子紺',
-    cmyk: '040073010073',
+    cmyk: [40, 73, 10, 73],
     rgb: '572A3F',
     color: 'NASUKON',
     c: 'r',
@@ -2011,7 +2011,7 @@ export default [
   },
   {
     name: '葡萄鼠',
-    cmyk: '073077054017',
+    cmyk: [73, 77, 54, 17],
     rgb: '5E3D50',
     color: 'BUDOHNEZUMI',
     c: 'r',
@@ -2020,7 +2020,7 @@ export default [
   },
   {
     name: '鳩羽鼠',
-    cmyk: '068064051006',
+    cmyk: [68, 64, 51, 6],
     rgb: '72636E',
     color: 'HATOBANEZUMI',
     c: 'b',
@@ -2029,7 +2029,7 @@ export default [
   },
   {
     name: '杜若',
-    cmyk: '077092048021',
+    cmyk: [77, 92, 48, 21],
     rgb: '622954',
     color: 'KAKITSUBATA',
     c: 'r',
@@ -2038,7 +2038,7 @@ export default [
   },
   {
     name: '蒲葡',
-    cmyk: '071089048012',
+    cmyk: [71, 89, 48, 12],
     rgb: '6D2E5B',
     color: 'EBIZOME',
     c: 'r',
@@ -2047,7 +2047,7 @@ export default [
   },
   {
     name: '牡丹',
-    cmyk: '025091008000',
+    cmyk: [25, 91, 8, 0],
     rgb: 'C1328E',
     color: 'BOTAN',
     c: 'r',
@@ -2056,7 +2056,7 @@ export default [
   },
   {
     name: '梅紫',
-    cmyk: '045080037000',
+    cmyk: [45, 80, 37, 0],
     rgb: 'A8497A',
     color: 'UMEMURASAKI',
     c: 'r',
@@ -2065,7 +2065,7 @@ export default [
   },
   {
     name: '似紫',
-    cmyk: '075084062042',
+    cmyk: [75, 84, 62, 42],
     rgb: '562E37',
     color: 'NISEMURASAKI',
     c: 'r',
@@ -2074,7 +2074,7 @@ export default [
   },
   {
     name: '躑躅',
-    cmyk: '000080003000',
+    cmyk: [0, 80, 3, 0],
     rgb: 'E03C8A',
     color: 'TSUTSUJI',
     c: 'r',
@@ -2083,7 +2083,7 @@ export default [
   },
   {
     name: '紫鳶',
-    cmyk: '070078061030',
+    cmyk: [70, 78, 61, 30],
     rgb: '60373E',
     color: 'MURASAKITOBI',
     c: 'r',
@@ -2092,7 +2092,7 @@ export default [
   },
   {
     name: '白練',
-    cmyk: '000003011000',
+    cmyk: [0, 3, 11, 0],
     rgb: 'FCFAF2',
     color: 'SHIRONERI',
     c: 'w',
@@ -2101,7 +2101,7 @@ export default [
   },
   {
     name: '胡粉',
-    cmyk: '000000002000',
+    cmyk: [0, 0, 2, 0],
     rgb: 'FFFFFB',
     color: 'GOFUN',
     c: 'w',
@@ -2110,7 +2110,7 @@ export default [
   },
   {
     name: '白鼠',
-    cmyk: '031023028000',
+    cmyk: [31, 23, 28, 0],
     rgb: 'BDC0BA',
     color: 'SHIRONEZUMI',
     c: 'w',
@@ -2119,7 +2119,7 @@ export default [
   },
   {
     name: '銀鼠',
-    cmyk: '052039036000',
+    cmyk: [52, 39, 36, 0],
     rgb: '91989F',
     color: 'GINNEZUMI',
     c: 'b',
@@ -2128,7 +2128,7 @@ export default [
   },
   {
     name: '鉛',
-    cmyk: '008000000073',
+    cmyk: [8, 0, 0, 73],
     rgb: '787878',
     color: 'NAMARI',
     c: 'b',
@@ -2137,7 +2137,7 @@ export default [
   },
   {
     name: '灰',
-    cmyk: '000000000070',
+    cmyk: [0, 0, 0, 70],
     rgb: '828282',
     color: 'HAI',
     c: 'b',
@@ -2146,7 +2146,7 @@ export default [
   },
   {
     name: '素鼠',
-    cmyk: '065053053000',
+    cmyk: [65, 53, 53, 0],
     rgb: '787D7B',
     color: 'SUNEZUMI',
     c: 'b',
@@ -2155,7 +2155,7 @@ export default [
   },
   {
     name: '利休鼠',
-    cmyk: '066050054001',
+    cmyk: [66, 50, 54, 1],
     rgb: '707C74',
     color: 'RIKYUNEZUMI',
     c: 'b',
@@ -2164,7 +2164,7 @@ export default [
   },
   {
     name: '鈍',
-    cmyk: '005000000080',
+    cmyk: [5, 0, 0, 80],
     rgb: '656765',
     color: 'NIBI',
     c: 'b',
@@ -2173,7 +2173,7 @@ export default [
   },
   {
     name: '青鈍',
-    cmyk: '078063062020',
+    cmyk: [78, 63, 62, 20],
     rgb: '535953',
     color: 'AONIBI',
     c: 'b',
@@ -2182,7 +2182,7 @@ export default [
   },
   {
     name: '溝鼠',
-    cmyk: '078065065030',
+    cmyk: [78, 65, 65, 30],
     rgb: '4F4F48',
     color: 'DOBUNEZUMI',
     c: 'b',
@@ -2191,7 +2191,7 @@ export default [
   },
   {
     name: '紅消鼠',
-    cmyk: '073069063030',
+    cmyk: [73, 69, 63, 30],
     rgb: '52433D',
     color: 'BENIKESHINEZUMI',
     c: 'b',
@@ -2200,7 +2200,7 @@ export default [
   },
   {
     name: '藍墨茶',
-    cmyk: '086072068047',
+    cmyk: [86, 72, 68, 47],
     rgb: '373C38',
     color: 'AISUMICHA',
     c: 'b',
@@ -2209,7 +2209,7 @@ export default [
   },
   {
     name: '檳榔子染',
-    cmyk: '079072072050',
+    cmyk: [79, 72, 72, 50],
     rgb: '3A3226',
     color: 'BINROJIZOME',
     c: 'b',
@@ -2218,7 +2218,7 @@ export default [
   },
   {
     name: '消炭',
-    cmyk: '000000000088',
+    cmyk: [0, 0, 0, 88],
     rgb: '434343',
     color: 'KESHIZUMI',
     c: 'b',
@@ -2227,7 +2227,7 @@ export default [
   },
   {
     name: '墨',
-    cmyk: '092078073066',
+    cmyk: [92, 78, 73, 66],
     rgb: '1C1C1C',
     color: 'SUMI',
     c: 'b',
@@ -2236,7 +2236,7 @@ export default [
   },
   {
     name: '黒',
-    cmyk: '091084074071',
+    cmyk: [91, 84, 74, 71],
     rgb: '080808',
     color: 'KURO',
     c: 'b',
@@ -2245,7 +2245,7 @@ export default [
   },
   {
     name: '呂',
-    cmyk: '000000000100',
+    cmyk: [0, 0, 0, 100],
     rgb: '0C0C0C',
     color: 'RO',
     c: 'b',
