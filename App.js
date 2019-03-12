@@ -178,8 +178,8 @@ export default class App extends Component {
             displayColor={displayColor}
             style={{
               position: 'absolute',
-              bottom: FONTSIZE,
-              right: FONTSIZE + 1 * (BUTTON_GAP + FONTSIZE),
+              bottom: FONTSIZE + 1,
+              right: FONTSIZE + 1 * (BUTTON_GAP + FONTSIZE) - 7,
               fontSize: BUTTON_RATIO * FONTSIZE,
             }}
           >
@@ -190,8 +190,8 @@ export default class App extends Component {
             displayColor={displayColor}
             style={{
               position: 'absolute',
-              bottom: FONTSIZE,
-              right: FONTSIZE + 2 * (BUTTON_GAP + FONTSIZE),
+              bottom: FONTSIZE + 1,
+              right: FONTSIZE + 2 * (BUTTON_GAP + FONTSIZE) - 7,
               fontSize: BUTTON_RATIO * FONTSIZE,
             }}
             onPress={this.randomColor}
@@ -203,8 +203,8 @@ export default class App extends Component {
             displayColor={displayColor}
             style={{
               position: 'absolute',
-              bottom: FONTSIZE,
-              right: FONTSIZE + 3 * (BUTTON_GAP + FONTSIZE),
+              bottom: FONTSIZE + 1,
+              right: FONTSIZE + 3 * (BUTTON_GAP + FONTSIZE) - 7,
               fontSize: BUTTON_RATIO * FONTSIZE,
             }}
             onPress={this.copy}
@@ -216,8 +216,8 @@ export default class App extends Component {
             displayColor={displayColor}
             style={{
               position: 'absolute',
-              bottom: FONTSIZE,
-              right: FONTSIZE + 4 * (BUTTON_GAP + FONTSIZE),
+              bottom: FONTSIZE + 1,
+              right: FONTSIZE + 4 * (BUTTON_GAP + FONTSIZE) - 7,
               fontSize: BUTTON_RATIO * FONTSIZE,
             }}
             onPress={this.onShare}
