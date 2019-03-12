@@ -25,7 +25,7 @@ export default class RGBBlock extends PureComponent {
       <View>
         {[r, g, b].map((width, index) => (
           <Animated.View
-            key={index}
+            key={index + width}
             style={{
               ...styles.RGBBlock,
               width:width.interpolate({

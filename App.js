@@ -6,7 +6,10 @@ import {
   View,
   FlatList,
   StatusBar,
+  Clipboard,
+  Alert,
 } from 'react-native'
+import { shareOnFacebook, shareOnTwitter } from 'react-native-social-share'
 import colorList from './color.js'
 import ColorTab from './components/ColorTab.js'
 import RGBBlock from './components/RGBBlock.js'
@@ -36,7 +39,7 @@ export default class App extends Component {
           this.colorEleList[changed[i].item.color].startAnimate()
         } else if (this.colorEleList[changed[i].item.color]) {
           this.colorEleList[changed[i].item.color].resetState(
-            changed[i].item.color,
+            changed[i].item.color
           )
         }
       }
@@ -81,8 +84,25 @@ export default class App extends Component {
           toValue: 1,
           duration: DURATION,
         }).start()
-      },
+      }
     )
+  }
+  copy = () => {
+    Clipboard.setString('#' + this.state.selectedColor.rgb)
+    Alert.alert('已复制', '#' + this.state.selectedColor.rgb)
+  }
+  twitter = () => {
+    shareOnFacebook({
+      'text':'Global democratized marketplace for art',
+      'link':'https://artboost.com/',
+      'imagelink':'https://artboost.com/apple-touch-icon-144x144.png',
+      //or use image
+      'image': 'artboost-icon',
+    },
+    (results) => {
+      console.log(results);
+    }
+  );
   }
   render() {
     let {
@@ -161,6 +181,7 @@ export default class App extends Component {
           >
             {'\ue936'}
           </MyButton>
+          {/* copy */}
           <MyButton
             displayColor={displayColor}
             style={{
@@ -169,9 +190,11 @@ export default class App extends Component {
               right: FONTSIZE + 3 * (BUTTON_GAP + FONTSIZE),
               fontSize: BUTTON_RATIO * FONTSIZE,
             }}
+            onPress={this.copy}
           >
             {'\ue6e5'}
           </MyButton>
+          {/* twitter */}
           <MyButton
             displayColor={displayColor}
             style={{
@@ -180,6 +203,7 @@ export default class App extends Component {
               right: FONTSIZE + 4 * (BUTTON_GAP + FONTSIZE),
               fontSize: BUTTON_RATIO * FONTSIZE,
             }}
+            onPress={this.twitter}
           >
             {'\ue673'}
           </MyButton>
