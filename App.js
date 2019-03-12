@@ -8,12 +8,13 @@ import {
   StatusBar,
   Clipboard,
   Alert,
+  Share,
 } from 'react-native'
-import { shareOnFacebook, shareOnTwitter } from 'react-native-social-share'
 import colorList from './color.js'
 import ColorTab from './components/ColorTab.js'
 import RGBBlock from './components/RGBBlock.js'
 import RGBNumber from './components/RGBNumber.js'
+import CMYKNumber from './components/CMYKNumber'
 import NameBlock from './components/NameBlock.js'
 import BasicColorChoose from './components/BasicColorChoose.js'
 import MyButton from './components/MyButton.js'
@@ -56,6 +57,7 @@ export default class App extends Component {
     this.setState({
       colorList: basicColor,
     })
+    this._flatList.scrollToOffset({ animated: false, offset: 0 });
     this.handleSelectedChange(basicColor[0])
   }
   handleSelectedChange = color => {
@@ -89,20 +91,22 @@ export default class App extends Component {
   }
   copy = () => {
     Clipboard.setString('#' + this.state.selectedColor.rgb)
-    Alert.alert('已复制', '#' + this.state.selectedColor.rgb)
+    Alert.alert(
+      '已复制 ' + this.state.selectedColor.name,
+      '#' + this.state.selectedColor.rgb
+    )
   }
-  twitter = () => {
-    shareOnFacebook({
-      'text':'Global democratized marketplace for art',
-      'link':'https://artboost.com/',
-      'imagelink':'https://artboost.com/apple-touch-icon-144x144.png',
-      //or use image
-      'image': 'artboost-icon',
-    },
-    (results) => {
-      console.log(results);
-    }
-  );
+  onShare = () => {
+    Share.share({
+      message:
+        'React Native | A framework for building native apps using React',
+    })
+  }
+  randomColor = () => {
+    let colorCount = colorList.length
+    let color = colorList[Math.floor(Math.random() * colorCount)]
+    console.log(color)
+    this.handleSelectedChange(color)
   }
   render() {
     let {
@@ -130,13 +134,24 @@ export default class App extends Component {
         >
           <RGBBlock
             displayColor={displayColor}
-            rgb={selectedColor.Drgb}
+            rgb={selectedColor.Drgb || []}
             bgColor={selectedColor.f}
           />
           {selectedColor.Drgb ? (
             <RGBNumber
               displayColor={displayColor}
               selectedColor={selectedColor}
+            />
+          ) : null}
+          {selectedColor.cmyk ? (
+            <CMYKNumber
+              displayColor={displayColor}
+              selectedColor={selectedColor}
+              style={{
+                position: 'absolute',
+                top: FONTSIZE * 2.5,
+                right: 0,
+              }}
             />
           ) : null}
           <NameBlock
@@ -170,6 +185,7 @@ export default class App extends Component {
           >
             {'\uE64C' /* e64b */}
           </MyButton>
+          {/* random */}
           <MyButton
             displayColor={displayColor}
             style={{
@@ -178,6 +194,7 @@ export default class App extends Component {
               right: FONTSIZE + 2 * (BUTTON_GAP + FONTSIZE),
               fontSize: BUTTON_RATIO * FONTSIZE,
             }}
+            onPress={this.randomColor}
           >
             {'\ue936'}
           </MyButton>
@@ -203,7 +220,7 @@ export default class App extends Component {
               right: FONTSIZE + 4 * (BUTTON_GAP + FONTSIZE),
               fontSize: BUTTON_RATIO * FONTSIZE,
             }}
-            onPress={this.twitter}
+            onPress={this.onShare}
           >
             {'\ue673'}
           </MyButton>
